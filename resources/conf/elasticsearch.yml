@@ -1,0 +1,48 @@
+#集群名称
+cluster.name: es-cluster
+#节点名称
+node.name: es1
+#允许成为主节点
+node.master: true
+#允许存储数据
+node.data: true
+#为节点添加部落属性
+node.attr.rack: r1
+#数据存储路径
+path.data: /usr/local/es/elasticsearch-7.6.1/data
+#日志存储路径
+path.logs: /usr/local/es/elasticsearch-7.6.1/log
+#系统调用过滤器
+bootstrap.system_call_filter: false
+#内存锁定
+bootstrap.memory_lock: false
+#允许访问网段
+network.host: 0.0.0.0
+#端口号
+http.port: 29200
+#可选最小主节点 默认1 建议设置为2
+discovery.zen.minimum_master_nodes: 2
+#本机ip地址 集群可以配置集群地址
+discovery.seed_hosts: ["ip:port","ip:port"]
+#节点名称，配置规则和IP配置类似
+cluster.initial_master_nodes: ["es1","es2","es3"]
+#gateway的类型，默认为local即为本地文件系统，可以设置为本地文件系统，分布式文件系统，hadoop的HDFS，和amazon的s3服务器。
+gateway.type: local
+#设置集群中N个节点启动时进行数据恢复，默认为1
+gateway.recover_after_nodes: 1
+#设置初始化数据恢复进程的超时时间，默认是5分钟。
+gateway.recover_after_time: 5m
+#设置这个集群中节点的数量，默认为2，一旦这N个节点启动，就会立即进行数据恢复。
+gateway.expected_nodes: 2
+#开启http协议
+http.cors.enabled: true
+#允许跨域
+http.cors.allow-origin: "*"
+# 是否返回设置的跨域Access-Control-Allow-Credentials头，如果设置为true,那么会返回给客户端。
+http.cors.allow-credentials: true
+#安全模式
+xpack.security.enabled: true
+xpack.security.transport.ssl.enabled: true
+xpack.security.transport.ssl.verification_mode: certificate
+xpack.security.transport.ssl.keystore.path: certs/elastic-certificates.p12
+xpack.security.transport.ssl.truststore.path: certs/elastic-certificates.p12
