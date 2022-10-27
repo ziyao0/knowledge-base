@@ -1,0 +1,98 @@
+plugins {
+    //spring boot版本
+    id 'org.springframework.boot' version '2.1.18.RELEASE'
+    // dependency-management
+    id 'io.spring.dependency-management' version '1.0.14.RELEASE'
+}
+// allprojects 表示为全局配置
+allprojects {
+    apply plugin: 'java-library'
+    apply plugin: 'maven-publish'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    group 'com.eason.devops'
+    version '1.0.0.RELEASE'
+// 配置传递
+    configurations.all {
+        transitive = true
+    }
+
+//    java {
+//        withJavadocJar() // 生成java-doc
+//        withSourcesJar() // 生成源码
+//    }
+
+    jar {
+        enabled = true //生成依赖jar包
+        archiveClassifier = '' //取消原来plain的后缀
+    }
+    configurations {
+        compileOnly {
+            extendsFrom annotationProcessor
+        }
+    }
+    //发布
+    publishing {
+        publications {
+            maven(MavenPublication) {
+                //如果是war包填写components.web，如果是jar包填写components.java
+                from components.java
+                //配置上传源码
+//                artifact sourceJar {
+//                    classifier "sources"
+//                }
+                versionMapping {
+                    usage('java-api') {
+                        fromResolutionOf('runtimeClasspath')
+                    }
+                    usage('java-runtime') {
+                        fromResolutionResult()
+                    }
+                }
+            }
+        }
+        repositories {
+            maven {
+                // 允许http访问
+                allowInsecureProtocol = true
+                // 私服仓库地址
+                url 'http://私服仓库地址'
+                credentials {
+                    username '用户名'
+                    password '密码'
+                }
+            }
+        }
+    }
+    repositories {
+        // 阿里云镜像地址
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        // 阿里云spring仓库地址
+        maven { url 'https://maven.aliyun.com/repository/spring/' }
+        maven {
+            // 允许http访问
+            allowInsecureProtocol = true
+            // 私服仓库地址
+            url 'http://私服仓库地址'
+            credentials {
+                username '用户名'
+                password '密码'
+            }
+        }
+        mavenLocal()
+        mavenCentral()
+    }
+// 依赖
+    dependencies {
+        // api 标识可以把依赖传递给子项目/implementation标识只在本项目中生效
+        api 'org.slf4j:slf4j-api:1.7.36'
+        // compileOnly 仅在编译时期有效
+        compileOnly 'org.projectlombok:lombok'
+        // compileOnly 注解处理器
+        annotationProcessor 'org.projectlombok:lombok'
+    }
+}
+test {
+    useJUnitPlatform()
+}

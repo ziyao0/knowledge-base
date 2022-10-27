@@ -45,7 +45,7 @@ libvirtError: unsupported configuration: Unable to find security driver 
 修改物理机中的`SELINUX`配置，编辑`/etc/sysconfig/selinux`文件中的SELINUX配置，注释掉（selinux=disabled）
 
 ```sh
-[root@dlsc001 usr]# vim /etc/sysconfig/selinux
+[root@test001 usr]# vim /etc/sysconfig/selinux
 
 # This file controls the state of SELinux on the system.
 # SELINUX= can take one of these three values:
@@ -74,7 +74,7 @@ SELINUXTYPE=targeted
 <!--
 WARNING: THIS IS AN AUTO-GENERATED FILE. CHANGES TO IT ARE LIKELY TO BE
 OVERWRITTEN AND LOST. Changes to this xml configuration should be made using:
-  virsh edit dlsc002
+  virsh edit test002
 or other application using the libvirt API.
 ......
     <video>
@@ -95,11 +95,11 @@ or other application using the libvirt API.
 </domain>
 ```
 
-删除带有selinux的配置执行`virsh define ./dlsc002.xml`重新定义配置文件
+删除带有selinux的配置执行`virsh define ./test002.xml`重新定义配置文件
 
 ```sh
-[root@threeTset qemu]# virsh define ./dlsc002.xml
-定义域 dlsc002（从 ./dlsc002.xml）
+[root@threeTset qemu]# virsh define ./test002.xml
+定义域 test002（从 ./test002.xml）
 ```
 
 重新启动虚拟机即可恢复正常.
