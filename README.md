@@ -39,7 +39,7 @@
 | &nbsp;&nbsp;&nbsp;&nbsp;![](resources/images/direction_west.png) 限流容错降级 | 限流容错降级        |
 | &nbsp;&nbsp;![](resources/images/direction_west.png) 组件安装               | 相关组件安装文档      |
 | &nbsp;&nbsp;![](resources/images/direction_west.png) 服务器常用操作            | 服务器处理相关操作文档   |
-
+| &nbsp;&nbsp;![](resources/images/direction_west.png) 工具使用               | 工具使用          |
 # 目录
 
 - [数据结构与算法](数据结构与算法)
@@ -86,3 +86,6 @@
     - [KVM启动异常解决方案](服务器相关/KVM启动异常解决方案.md)
     - [防火墙与selinux](服务器相关/防火墙与selinux.md)
     - [Linux添加路由](服务器相关/Linux添加路由.md)
+- [工具使用](工具使用)
+    - [Git操作命令](工具使用/Git操作命令.md)
+    - [Gradle中build文件详解](工具使用/Gradle/Gradle中build文件详解.md)
