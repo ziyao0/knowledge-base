@@ -41,17 +41,6 @@
 | &nbsp;&nbsp;![](resources/images/direction_west.png) 服务器常用操作            | 服务器处理相关操作文档   |
 | &nbsp;&nbsp;![](resources/images/direction_west.png) 工具使用               | 工具使用          |
 
-| 工程名 | 描述 |
-| --- | --- |
-| ![](doc/images/direction_south.png) common-mq | 父模块 |
-| &nbsp;&nbsp;![](doc/images/direction_west.png) doc | 文档 |
-| &nbsp;&nbsp;![](doc/images/direction_west.png) resources | 安装包&配置文件 |
-| &nbsp;&nbsp;![](doc/images/direction_west.png) common-mq-model | 基础类 |
-| &nbsp;&nbsp;![](doc/images/direction_west.png) common-mq-basics | MQ原生API |
-| &nbsp;&nbsp;![](doc/images/direction_west.png) common-mq-spring | spring整合MQ |
-| &nbsp;&nbsp;![](doc/images/direction_west.png) common-mq-springboot | springboot整合MQ |
-| &nbsp;&nbsp;![](doc/images/direction_west.png) common-mq-utils | mq整合 |
-
 # 目录
 
 - [数据结构与算法](数据结构与算法)
