@@ -24,22 +24,22 @@
 
 ① Doc工程清单
 
-| 工程名                                                                     | 描述            |
-|-------------------------------------------------------------------------|---------------|
-| ![](resources/images/direction_south.png) doc                           | 父模块           |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) resources          | 收藏数据、资源文件、附件等 |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) 数据结构与算法            | 数据结构与算法学习相关文档 |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) JVM                | JVM研究相关文档     |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) 源码研究               | 源码研究相关文档      |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) 分布式组件              | 分布式组件相关使用文档   |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) Netty详解            | 分布式消息架构详解     |
-| &nbsp;&nbsp;![](resources/images/direction_south.png) 微服务组件             | 微服务组件相关文档     |
-| &nbsp;&nbsp;&nbsp;&nbsp;![](resources/images/direction_west.png) 注册中心   | 注册中心解决方案      |
-| &nbsp;&nbsp;&nbsp;&nbsp;![](resources/images/direction_west.png) 分布式事务  | 分布式事务解决方案     |
-| &nbsp;&nbsp;&nbsp;&nbsp;![](resources/images/direction_west.png) 限流容错降级 | 限流容错降级        |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) 组件安装               | 相关组件安装文档      |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) 服务器常用操作            | 服务器处理相关操作文档   |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) 工具使用               | 工具使用          |
+| 工程名                                                       | 描述                       |
+| ------------------------------------------------------------ | -------------------------- |
+| ![](resources/images/direction_south.png) doc                | 父模块                     |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) resources | 收藏数据、资源文件、附件等 |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) 数据结构与算法 | 数据结构与算法学习相关文档 |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) JVM     | JVM研究相关文档            |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) 源码研究 | 源码研究相关文档           |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) 分布式组件 | 分布式组件相关使用文档     |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) Netty详解 | 分布式消息架构详解         |
+| &nbsp;&nbsp;![](resources/images/direction_south.png) 微服务组件 | 微服务组件相关文档         |
+| &nbsp;&nbsp;&nbsp;&nbsp;![](resources/images/direction_west.png) 注册中心 | 注册中心解决方案           |
+| &nbsp;&nbsp;&nbsp;&nbsp;![](resources/images/direction_west.png) 分布式事务 | 分布式事务解决方案         |
+| &nbsp;&nbsp;&nbsp;&nbsp;![](resources/images/direction_west.png) 限流容错降级 | 限流容错降级               |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) 组件安装 | 相关组件安装文档           |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) 服务器常用操作 | 服务器处理相关操作文档     |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) 工具使用 | 工具使用                   |
 
 # 目录
 
@@ -172,7 +172,7 @@ ChannelInboundHandler //用于处理入站 I/O 事件。
   实现了一种高级形式的拦截过滤器模式，使用户可以完全控制事件的处理方式，以及 Channel 中各个的ChannelHandler 如何相互交互。
 
 在 Netty 中每个 Channel 都有且仅有一个 ChannelPipeline 与之对应，它们的组成关系如下：
-![](../resources/images/channelPipeline.png)
+![](resources/images/channelPipeline.png)
 
 ## ByteBuf详解
 
