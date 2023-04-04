@@ -140,10 +140,10 @@ helm install rancher ./rancher-2.6.10.tgz \
     --namespace cattle-system \
 	--set rancherImageTag=v2.6.10 \
     --set hostname=rancher.eason.com \
-    --set rancherImage=registry.dlsc.com:8082/rancher/rancher \
+    --set rancherImage=registry.eason.com:8082/rancher/rancher \
     --set ingress.tls.source=secret \
     --set privateCA=true \
-    --set systemDefaultRegistry=registry.dlsc.com:8082 \
+    --set systemDefaultRegistry=registry.eason.com:8082 \
     --set useBundledSystemChart=true
 ~~~
 
@@ -157,10 +157,10 @@ helm install rancher ./rancher-2.6.10.tgz \
 mirrors:
   "*":
     endpoint:
-      - "http://registry.dlsc.com:8082"
+      - "http://registry.eason.com:8082"
   docker.io:
     endpoint:
-      - "http://registry.dlsc.com:8082"
+      - "http://registry.eason.com:8082"
 ~~~
 
 
