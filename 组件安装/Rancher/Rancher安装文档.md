@@ -139,7 +139,7 @@ kubectl -n cattle-system create secret generic tls-ca \
 helm install rancher ./rancher-2.6.10.tgz \
     --namespace cattle-system \
 	--set rancherImageTag=v2.6.10 \
-    --set hostname=rancher.sgcc.com \
+    --set hostname=rancher.eason.com \
     --set rancherImage=registry.dlsc.com:8082/rancher/rancher \
     --set ingress.tls.source=secret \
     --set privateCA=true \

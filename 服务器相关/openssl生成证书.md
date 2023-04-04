@@ -36,11 +36,11 @@ ST = beijing
 
 L = beijing
 
-O = sgcc
+O = eason
 
-OU = sgcc
+OU = eason
 
-CN = rancher.sgcc.com
+CN = rancher.eason.com
  
 [v3_req]
 basicConstraints = CA:FALSE
@@ -49,9 +49,9 @@ subjectAltName = @alt_names
  
 [alt_names]
 
-DNS.1 = *.rancher.sgcc.com
+DNS.1 = *.rancher.eason.com
 
-DNS.2 = *.sgcc.com
+DNS.2 = *.eason.com
 ```
 
 ### 3 生成服务器端证书
