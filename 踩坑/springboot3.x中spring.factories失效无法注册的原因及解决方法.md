@@ -19,20 +19,16 @@ SpringBoot 2.7开始不推荐使用`/META-INF/spring.factories`w文件，并且�
 
 **引用官网发行说明：**
 
-~~~
-Changes to Auto-configuration
-Auto-configuration Registration
-If you have created your own auto-configurations, you should move the registration from spring.factories under the org.springframework.boot.autoconfigure.EnableAutoConfiguration key to a new file named META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports. Rather than a single comma-separate list, each line contains the fully qualified name of an auto-configuration class. See the included auto-configurations for an example.
-
-For backwards compatibility, entries in spring.factories will still be honored.
-
-New @AutoConfiguration Annotation
-A new @AutoConfiguration annotation has been introduced. It should be used to annotate top-level auto-configuration classes that are listed in the new META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports file, replacing @Configuration. Configuration classes that are nested within or imported by an @AutoConfiguration class should continue to use @Configuration as before.
-
-For your convenience, @AutoConfiguration also supports auto-configuration ordering via the after, afterNames, before and beforeNames attributes. This can be used as a replacement for @AutoConfigureAfter and @AutoConfigureBefore.
-~~~
-
-
+> Changes to Auto-configuration
+> Auto-configuration Registration
+> If you have created your own auto-configurations, you should move the registration from spring.factories under the org.springframework.boot.autoconfigure.EnableAutoConfiguration key to a new file named META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports. Rather than a single comma-separate list, each line contains the fully qualified name of an auto-configuration class. See the included auto-configurations for an example.
+>
+> For backwards compatibility, entries in spring.factories will still be honored.
+>
+> New @AutoConfiguration Annotation
+> A new @AutoConfiguration annotation has been introduced. It should be used to annotate top-level auto-configuration classes that are listed in the new META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports file, replacing @Configuration. Configuration classes that are nested within or imported by an @AutoConfiguration class should continue to use @Configuration as before.
+>
+> For your convenience, @AutoConfiguration also supports auto-configuration ordering via the after, afterNames, before and beforeNames attributes. This can be used as a replacement for @AutoConfigureAfter and @AutoConfigureBefore.
 
 ##### 解决方案
 
