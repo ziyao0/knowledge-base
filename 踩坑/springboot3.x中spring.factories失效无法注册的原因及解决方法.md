@@ -15,7 +15,7 @@ springbooot对于这种问题提供了两种解决方案:
 #### 2 失效原因
 
  排除程序自身原因（忘记加注解、`spring.factories`中类路径配置错误、书写错误等等），在[SpringBoot发行说明](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.7-Release-Notes#changes-to-auto-configuration)从
-SpringBoot 2.7开始不推荐使用`/META-INF/spring.factories`w文件，并且在SpringBoot 3将异常对`/META-INF/spring.factories`的支持。
+SpringBoot 2.7开始不推荐使用`/META-INF/spring.factories`w文件，并且在SpringBoot 3将移除对`/META-INF/spring.factories`的支持。
 
 **引用官网发行说明：**
 
