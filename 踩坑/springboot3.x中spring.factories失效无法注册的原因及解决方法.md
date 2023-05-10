@@ -1,4 +1,4 @@
-### 记录SpringBoot3.x中spring.factories失效无法注册的原因及解决方法
+### [SpringBoot3.x中spring.factories失效无法注册的原因及解决方法](../README.md)
 
 #### 1 什么是spring.factories？
 
