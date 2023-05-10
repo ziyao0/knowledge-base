@@ -74,7 +74,7 @@
 - [工具使用](工具使用)
     - [Git操作命令](工具使用/Git操作命令.md)
     - [Gradle中build文件详解](工具使用/Gradle/Gradle中build文件详解.md)
-  - [踩坑](踩坑)
+- [踩坑](踩坑)
     - [springboot3.x中spring.factories失效无法注册的原因及解决方法.md](踩坑/springboot3.x中spring.factories失效无法注册的原因及解决方法.md)
 
 # 深入理解Netty架构
