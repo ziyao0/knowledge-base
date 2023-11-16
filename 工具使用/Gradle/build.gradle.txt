@@ -11,7 +11,7 @@ allprojects {
     apply plugin: 'org.springframework.boot'
     apply plugin: 'io.spring.dependency-management'
 
-    group 'com.eason.devops'
+    group 'com.ziyao.devops'
     version '1.0.0.RELEASE'
 // 配置传递
     configurations.all {
