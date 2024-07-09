@@ -8,22 +8,22 @@
 
 ① Doc工程清单
 
-| 工程名                                                       | 描述                       |
-| ------------------------------------------------------------ | -------------------------- |
-| ![](resources/images/direction_south.png) doc                | 父模块                     |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) resources | 收藏数据、资源文件、附件等 |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) 数据结构与算法 | 数据结构与算法学习相关文档 |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) JVM     | JVM研究相关文档            |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) 源码研究 | 源码研究相关文档           |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) 分布式组件 | 分布式组件相关使用文档     |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) Netty详解 | 分布式消息架构详解         |
-| &nbsp;&nbsp;![](resources/images/direction_south.png) 微服务组件 | 微服务组件相关文档         |
-| &nbsp;&nbsp;&nbsp;&nbsp;![](resources/images/direction_west.png) 注册中心 | 注册中心解决方案           |
-| &nbsp;&nbsp;&nbsp;&nbsp;![](resources/images/direction_west.png) 分布式事务 | 分布式事务解决方案         |
-| &nbsp;&nbsp;&nbsp;&nbsp;![](resources/images/direction_west.png) 限流容错降级 | 限流容错降级               |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) 组件安装 | 相关组件安装文档           |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) 服务器常用操作 | 服务器处理相关操作文档     |
-| &nbsp;&nbsp;![](resources/images/direction_west.png) 工具使用 | 工具使用                   |
+| 工程名                                                                     | 描述            |
+|-------------------------------------------------------------------------|---------------|
+| ![](resources/images/direction_south.png) doc                           | 父模块           |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) resources          | 收藏数据、资源文件、附件等 |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) 数据结构与算法            | 数据结构与算法学习相关文档 |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) JVM                | JVM研究相关文档     |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) 源码研究               | 源码研究相关文档      |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) 分布式组件              | 分布式组件相关使用文档   |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) Netty详解            | 分布式消息架构详解     |
+| &nbsp;&nbsp;![](resources/images/direction_south.png) 微服务组件             | 微服务组件相关文档     |
+| &nbsp;&nbsp;&nbsp;&nbsp;![](resources/images/direction_west.png) 注册中心   | 注册中心解决方案      |
+| &nbsp;&nbsp;&nbsp;&nbsp;![](resources/images/direction_west.png) 分布式事务  | 分布式事务解决方案     |
+| &nbsp;&nbsp;&nbsp;&nbsp;![](resources/images/direction_west.png) 限流容错降级 | 限流容错降级        |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) 组件安装               | 相关组件安装文档      |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) 服务器常用操作            | 服务器处理相关操作文档   |
+| &nbsp;&nbsp;![](resources/images/direction_west.png) 工具使用               | 工具使用          |
 
 # 目录
 
